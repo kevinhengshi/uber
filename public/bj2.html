@@ -24,11 +24,19 @@
   
 
 
+    <!-- start Mixpanel -->
+<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+  b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+  /* Order here is important because we track experiments done in optimizely via mixpanel. Optimizely
+   sends events to the first mixpanel instance it find. So far, we only run experiments on partners */
+  mixpanel.init("e39a4ba8174726fb79f6a6c77b7a5247");
   
-  <link href="//uber-static.s3.amazonaws.com/superfine/1.2.9/superfine.css" rel="stylesheet">
+</script>
+<!-- end Mixpanel -->
+ 
   
-  <link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/free-candy/stylesheets/drive_short.95b1b1e6d3c32584504228da694eb30a.css" />
-  <script src="//cdn.optimizely.com/js/745050198.js"></script>
+  <link rel="stylesheet" href="/drive_short_index.css" />
 
 
 
@@ -45,7 +53,7 @@
   <section class="wrapper">
     
   <header class="contextual">
-  	<div class="logo"></div>
+    <div class="logo"></div>
   </header>
   <section class="content ">
   
@@ -59,9 +67,8 @@
       <section class="container">
         <section class="row">
           <article class="col-md-8 header-text">
-            <h1 class="hero-title">加入优步， 与全球同步</h1>
-            <h1 class="hero-title">立刻成为优步的合作伙伴。</h1>
-            <p class="hero-description">遍布全球250个城市的成百上千的优步司机正在享受优厚的收入，灵活的工作时间。 为减少城市污染，改善生活环境尽着自己的努力</p>
+            <h1 style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;' class="hero-title">立刻加入，成为人民优步司机！</h1>
+            <p style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif; font-size: 170%' class="hero-description">收入丰厚，工作自由，自己做自己的老板。为解决城市交通贡献一臂之力！</p>
           </article>
         </section>
       </section>
@@ -70,9 +77,20 @@
       <section class="row">
         <article class="col-md-4 col-md-offset-8">
           <div style="padding:36px 36px 18px 36px" class="hero-box-container">
-            <h4 style="color:black; text-align: center; margin: 0px 0px 18px 0px; font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;">今天就开始</h4>
-            <img style= "display: block; margin-right:auto; margin-left:auto" src="qrcode_for_guangzhou.jpg"></img>
-            <p style="margin:15px0px0px0px"></p>
+            <div class="box-title">
+              <h4 class="winged-title subtitle">
+                  <span style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>今天就开始</span>
+              </h4>
+              </div>
+            <img style= "display: block; margin-right:auto; margin-left:auto" src="bj_baidu_qr.jpeg"></img>
+            <div style="text-size: 150%; color: black;" class = "box-title">
+            <ol style="text-size: 150%; color: black; webkit-padding-start: 0px; font-family: 'Myriad Pro', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; text-align: left">
+              <li style= "margin: 0 0 10px 0; text-size: 20px; color: black; left-padding: 0px">扫描二维码，关注人民优步司机注册微信号(UberOfficial)，马上开启填写申请表格</li>
+              <li style = "margin: 0 0 10px 0; text-size: 20px; color: black; left-padding: 0px">下载司机端软件 </li>
+              <li style = "margin: 0 0 10px 0; text-size: 20px; color: black; left-padding: 0px">后台人员会在48小时内帮您开通账号</li>
+            </ol>
+          </div>
+            <p style="margin:15px0px0px0px; font-family: 'Myriad Pro', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;">注册即代表我同意 <a href="https://www.uber.com/legal/chn/terms" target="_self&quot;"><font><font>隐私政策,</font></font></a> 并理解 Uber 是一个叫车工具，并非交通运输承运人。</p>
             
 
           </div>
@@ -100,27 +118,27 @@
   <div class="col-md-3">
     <div class="gfx gfx-money"></div>
   </div>
-  <div class="col-md-5">
-    <h3>优厚的额外收入</h3>
-    <p>有私家车辆？为什么不在上下班之余获得额外收入？优步可以帮助身在都市的您在忙碌的生活中轻轻松松的获得收入。这样不单方便了他人，也会有效减少城市的拥堵。</p>
+  <div style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;' class="col-md-5">
+    <h3 style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>优厚的额外回报</h3>
+    <p style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>有私家车辆？为什么不在上下班之余获得额外回报？优步可以帮助身在都市的您在忙碌的生活中轻轻松松的获得生活补贴。这样不单方便了他人，也会有效减少城市的拥堵。</p>
   </div>
 </article>
 <article class="row feature-row">
   <div class="col-md-3">
     <div class="gfx gfx-time"></div>
   </div>
-  <div class="col-md-5">
-    <h3>灵活的工作时间</h3>
-    <p>反感了死板的朝九晚五？优步提供给您随心所欲的上线时间。 不必再错过家人朋友的聚会，再工作之余也享受生活的滋味。</p>
+  <div style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;' class="col-md-5">
+    <h3 style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>灵活的工作时间</h3>
+    <p style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>反感了死板的朝九晚五？优步提供给您随心所欲的上线时间。 不必再错过家人朋友的聚会，工作之余也享受生活的滋味。</p>
   </div>
 </article>
 <article class="row feature-row">
   <div class="col-md-3">
     <div class="gfx gfx-freedom"></div>
   </div>
-  <div class="col-md-5">
-    <h3>立刻加入我们</h3>
-    <p>优步大家庭是由超棒的乘客和司机组成的。加入我们的团队，我们的潮流，结交新的好友，享受更多的快乐时光。</p>
+  <div style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;' class="col-md-5">
+    <h3 style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>立刻加入我们</h3>
+    <p style='font-family: Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;'>优步大家庭是由超棒的乘客和司机组成的。加入我们的团队，我们的潮流，结交新的好友，享受更多的快乐时光。</p>
   </div>
 </article>
   </section>
@@ -159,6 +177,18 @@
 
   </section>
   </div>
+          <script type="text/javascript">
+      var superProperties = {
+        flow: 'avos',
+        url: location.protocol + '//' + location.host + location.pathname,
+        city_name: 'Beijing'
+      };
+      mixpanel.register(superProperties);
+
+      var properties = {};
+      
+      mixpanel.track('web.drivers.signup.landing', properties);
+  </script>
 <body>
 
 </html>
